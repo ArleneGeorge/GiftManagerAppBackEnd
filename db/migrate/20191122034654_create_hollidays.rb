@@ -1,7 +1,7 @@
 class CreateHollidays < ActiveRecord::Migration[6.0]
   def change
     create_table :hollidays do |t|
-      t.references :friend_id, null: false, foreign_key: true
+      t.references :friend, null: false, foreign_key: true
       t.boolean :christmas
       t.boolean :hanukkah
       t.boolean :kwanza

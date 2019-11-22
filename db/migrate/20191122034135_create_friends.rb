@@ -12,7 +12,7 @@ class CreateFriends < ActiveRecord::Migration[6.0]
       t.string :state
       t.string :zip_code
       t.string :cell_phone
-      t.references :user_id, null: false, foreign_key: true
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
