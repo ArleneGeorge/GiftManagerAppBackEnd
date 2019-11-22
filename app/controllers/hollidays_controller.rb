@@ -1,5 +1,4 @@
 class HollidaysController < ApplicationController
-        before_action :set_holliday, only[:show]
     
         def index 
             @hollidays = Holliday.all 
