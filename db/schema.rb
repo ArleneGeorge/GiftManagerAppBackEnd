@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2019_11_22_221310) do
     t.index ["friend_id"], name: "index_hollidays_on_friend_id"
   end
 
-  create_table "ocassions", force: :cascade do |t|
+  create_table "occasions", force: :cascade do |t|
     t.bigint "friend_id", null: false
     t.string "occasion"
     t.string "month"
@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(version: 2019_11_22_221310) do
     t.integer "reminder_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["friend_id"], name: "index_ocassions_on_friend_id"
+    t.index ["friend_id"], name: "index_occasions_on_friend_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -85,5 +85,5 @@ ActiveRecord::Schema.define(version: 2019_11_22_221310) do
   add_foreign_key "friends", "users"
   add_foreign_key "gifts", "friends"
   add_foreign_key "hollidays", "friends"
-  add_foreign_key "ocassions", "friends"
+  add_foreign_key "occasions", "friends"
 end

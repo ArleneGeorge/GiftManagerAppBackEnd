@@ -1,6 +1,6 @@
-class CreateOcassions < ActiveRecord::Migration[6.0]
+class CreateOccasions < ActiveRecord::Migration[6.0]
   def change
-    create_table :ocassions do |t|
+    create_table :occasions do |t|
       t.references :friend, null: false, foreign_key: true
       t.string :occasion
       t.string :month
