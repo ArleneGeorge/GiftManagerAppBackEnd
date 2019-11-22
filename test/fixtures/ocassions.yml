@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  friend: one
+  occasion: MyString
+  month: MyString
+  day: MyString
+  year: MyString
+  reminder_time: MyString
+
+two:
+  friend: two
+  occasion: MyString
+  month: MyString
+  day: MyString
+  year: MyString
+  reminder_time: MyString
