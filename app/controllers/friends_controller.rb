@@ -1,5 +1,4 @@
 class FriendsController < ApplicationController
-    before_action :set_friend, only [:show]
 
     def index
         @friends = Friend.all 

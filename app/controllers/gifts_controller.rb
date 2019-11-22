@@ -1,5 +1,4 @@
 class GiftsController < ApplicationController
-    before_action :set_gift, only[:show]
 
     def index 
         @gifts = Gift.all 

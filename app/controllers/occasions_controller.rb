@@ -1,5 +1,4 @@
 class OccasionsController < ApplicationController
-        before_action :set_occasion, only[:show]
     
         def index 
             @occasions = Occasion.all 
