@@ -1,4 +1,5 @@
 class OccasionsController < ApplicationController
+    before_action :set_occasion, only: [:show, :update, :destroy]
     
         def index 
             @occasions = Occasion.all 
@@ -26,10 +27,10 @@ class OccasionsController < ApplicationController
         private
     
         def occasion_params
-            params.require(:occasion).permit(:friend_id, :month, :day, :year, :reminder_time)
+            params.require(:occasion).permit(:occasion, :friend_id, :month, :day, :year, :reminder_time)
         end
     
-        def find_occasion
+        def set_occasion
             @occasion = Occasion.find(params[:id])
         end
 end

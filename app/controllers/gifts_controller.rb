@@ -1,5 +1,5 @@
 class GiftsController < ApplicationController
-
+    before_action :set_gift, only: [:show, :update, :destroy]
     def index 
         @gifts = Gift.all 
         render json: @gifts 
@@ -29,7 +29,7 @@ class GiftsController < ApplicationController
         params.require(:gift).permit(:friend_id, :link, :image_url, :name, :note)
     end
 
-    def find_gift
+    def set_gift
         @gift = Gift.find(params[:id])
     end
 end
