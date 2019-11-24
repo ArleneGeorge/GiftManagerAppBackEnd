@@ -1,4 +1,5 @@
 class HollidaysController < ApplicationController
+    before_action :set_holliday, only: [:show, :update, :destroy]
     
         def index 
             @hollidays = Holliday.all 
@@ -29,7 +30,7 @@ class HollidaysController < ApplicationController
             params.require(:holliday).permit(:friend_id, :christmas, :hanukkah, :kwanza, :valentines, :easter, :reminder_time)
         end
     
-        def find_holliday
+        def set_holliday
             @holliday = Holliday.find(params[:id])
         end
     end
