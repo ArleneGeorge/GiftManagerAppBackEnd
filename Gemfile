@@ -17,6 +17,8 @@ gem 'puma', '~> 4.1'
 
 # Use Json Web Token (JWT) for token based authentication
 gem 'jwt'
+gem 'jwt_sessions', '~> 2.3'
+
 
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
