@@ -19,7 +19,16 @@ class HollidaysController < ApplicationController
                 render json: @holliday.errors.full_messages
             end
         end
-    
+
+        def update
+            @holliday = Holliday.find(params[:id])
+            if @holliday.update(holliday_params)
+            render json: @holliday
+            else 
+                render :edit
+            end
+        end
+
         def destroy
             @holliday.destroy 
         end
