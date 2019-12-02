@@ -21,6 +21,15 @@ class FriendsController < ApplicationController
         end
     end
 
+    def update
+        @friend = Friend.find(params[:id])
+        if @friend.update(friend_params)
+        render json: @friend
+        else 
+            render :edit
+        end
+    end
+
     def destroy 
         @friend.destroy
     end

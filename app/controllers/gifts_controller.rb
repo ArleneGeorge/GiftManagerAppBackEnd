@@ -19,6 +19,15 @@ class GiftsController < ApplicationController
         end
     end
 
+    def update
+        @gift = Gift.find(params[:id])
+        if @gift.update(gift_params)
+        render json: @gift
+        else 
+            render :edit
+        end
+    end
+
     def destroy
         @gift.destroy 
     end
