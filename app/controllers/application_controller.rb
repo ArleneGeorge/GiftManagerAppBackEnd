@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+  include JWTSessions::RailsAuthorization
 
     def not_found
       render json: { error: 'not_found' }
