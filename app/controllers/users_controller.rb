@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     # GET /users
     def index
       @users = User.all
-      render json: @users, status: :ok, include: [:friends ]
+      render json: @users, include: [:friends ], status: :ok, 
     end
   
     # GET /users/{username}
