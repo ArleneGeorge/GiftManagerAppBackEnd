@@ -23,6 +23,15 @@ class OccasionsController < ApplicationController
         def destroy
             @occasion.destroy 
         end
+
+        def update
+            @occasion = Occasion.find(params[:id])
+            if @occasion.update(occasion_params)
+            render json: @occasion
+            else 
+                render :edit
+            end
+        end
     
         private
     
