@@ -14,12 +14,7 @@
 
 5. Enter rails s into the terminal to start the server for the Back-End. 
 
-
-
-Things you may want to cover:
-
 #### Ruby version 2.6.1
 
 #### Database PostgreSQL >= 0.18', '< 2.0
-
 [Front End Using API](https://prezzie-gift-manager-app.web.app/)
