@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -17,6 +17,8 @@ gem 'puma', '~> 4.1'
 
 # Use Json Web Token (JWT) for token based authentication
 gem 'jwt'
+gem 'jwt_sessions', '~> 2.3'
+
 
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'

@@ -17,5 +17,4 @@
 #### Ruby version 2.6.1
 
 #### Database PostgreSQL >= 0.18', '< 2.0
-
 [Front End Using API](https://prezzie-gift-manager-app.web.app/)
